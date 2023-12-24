@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Frontend Mentor | Base Apparel coming soon page</title>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="../src/images/favicon-32x32.png"
+		/>
+		<!-- CSS Stylesheet -->
+		<link rel="stylesheet" href="./sass/main.scss" />
+	</head>
+	<body>
+		<section class="hero container">
+			<div class="hero__logo-wrapper">
+				<img class="logo" src="../src/images/logo.svg" alt="" />
+			</div>
+			<div class="hero__image-wrapper">
+				<img class="mobile-image" src="../src/images/hero-mobile.jpg" alt="" />
+				<img
+					class="desktop-image"
+					src="../src/images/hero-desktop.jpg"
+					alt=""
+				/>
+			</div>
+			<div class="hero__contents-wrapper">
+				<h1 class="hero__title">
+					<span class="title-light">We're</span> coming soon
+				</h1>
+				<p class="hero__description">
+					Hello fellow shoppers! We're currently building our new fashion store.
+					Add your email below to stay up-to-date with announcements and our
+					launch deals.
+				</p>
+				<form class="hero__form" id="email-form" action="">
+					<div class="email-input-field-wrapper" id="email-input-wrapper">
+						<input
+							class="email-input-field"
+							id="email-input-field"
+							type="text"
+							placeholder="Email Address"
+						/>
+						<img
+							class="error-icon hide"
+							id="error-icon"
+							src="../src/images/icon-error.svg"
+							alt=""
+						/>
+						<button class="submit-btn" type="submit">
+							<img
+								class="arrow-icon"
+								src="../src/images/icon-arrow.svg"
+								alt=""
+							/>
+						</button>
+					</div>
+					<p class="invalid-message hide" id="invalid-message">
+						Please provide a valid email
+					</p>
+				</form>
+			</div>
+		</section>
+
+		<!-- Attribution -->
+		<section class="attribution">
+			<p class="attribution__text">
+				Challenge by
+				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+					>Frontend Mentor</a
+				>. Coded by <a href="https://github.com/chuantiong">Alvin Tiong</a>.
+			</p>
+		</section>
+		<script src="index.js" defer></script>
+	</body>
+</html>
